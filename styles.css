@@ -1,3 +1,11 @@
+/* Reset de estilos predeterminados del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -6,30 +14,103 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    color: #333;
 }
+
+/* Contenedor principal */
 .container {
     background: white;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
 }
+
+/* Encabezado */
 h1 {
     text-align: center;
+    margin-bottom: 20px;
+    color: #007BFF;
+    font-size: 1.8em;
 }
+
+/* Etiquetas, selectores e inputs */
 label, select, input {
     display: block;
     margin: 10px 0;
     width: 100%;
 }
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+/* Botón de conversión */
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     background-color: #007BFF;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 10px;
 }
+
 button:hover {
     background-color: #0056b3;
+}
+
+/* Resultado */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+/* Accesibilidad */
+button:focus, input:focus, select:focus {
+    outline: 3px solid #007BFF;
+    outline-offset: 2px;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 1.1em;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 768px) {
+    .container {
+        max-width: 500px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 1.3em;
+    }
 }
