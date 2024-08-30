@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convertidor de Unidades</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Convertidor de Unidades</h1>
+      <label for="tipo-unidad">Selecciona el tipo de unidad:</label>
+      <select id="tipo-unidad">
+        <option value="temperatura">Temperatura</option>
+        <option value="longitud">Longitud</option>
+        <!-- Puedes añadir más opciones aquí -->
+      </select>
+      <br /><br />
+      <label for="valor">Valor:</label>
+      <input type="number" id="valor" placeholder="Ingresa un valor" />
+      <br /><br />
+      <label for="unidad-origen">Unidad de Origen:</label>
+      <select id="unidad-origen">
+        <!-- Opciones dinámicas -->
+      </select>
+      <br /><br />
+      <label for="unidad-destino">Unidad de Destino:</label>
+      <select id="unidad-destino">
+        <!-- Opciones dinámicas -->
+      </select>
+      <br /><br />
+      <button id="convertir">Convertir</button>
+      <br /><br />
+      <h2>Resultado: <span id="resultado">0</span></h2>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
